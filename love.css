@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fceaff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+section::before{
+    content: "";
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, hotpink, #f3eded);
+    transform: translate(220px, 150px);
+}
+section::after{
+    content: "";
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, hotpink, #f3eded);
+    transform: translate(-200px, -150px);
+}
+.container{
+    z-index: 100;
+    border: 2px solid pink;
+    text-align: center;
+    padding: 20px;
+    width: 350px;
+    border-radius: 25px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.container h1{
+    color: hotpink;
+    font-size: 2rem;
+    font-style: oblique;
+}
+label{
+    color: rgb(221, 146, 158);
+    margin: 10px;
+    font-weight: 700;
+}
+input{
+    width: 90%;
+    padding: 10px;
+    border: 1px solid hotpink;
+    background-color: #ffffff;
+    color: hotpink;
+}
+button{
+    padding: 7px 15px;
+    margin: 15px;
+    background-image: linear-gradient(60deg, hotpink, #f3eded);
+    color: white;
+    border: 1px solid hotpink;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#result{
+    color: hotpink;
+    font-family: "Pacifico", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
